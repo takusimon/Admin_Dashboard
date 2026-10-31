@@ -29,6 +29,7 @@ header {
     display:grid;
     grid-template: max-content max-content/ 1fr 1fr 1fr;
     padding:1rem 3rem;
+    row-gap: 2rem;
 }
 
 nav {
@@ -82,7 +83,7 @@ header #profile {
     
 }
 
-section a, section h2,label{
+#profile a, #profile h2,label{
     font-size:1.5rem;
     position:relative;
     top:6px;
@@ -97,3 +98,15 @@ form input {
     background-color: var(--grey);
 
 }
+
+#handle-greet {
+    grid-column:1/4;
+    display:flex;
+    justify-content: space-between;
+}
+
+.left-side {
+    display:flex;
+    margin-right:auto;
+}
+.
