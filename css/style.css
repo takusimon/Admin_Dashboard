@@ -56,7 +56,6 @@ main {
     height:80vh;
     display:grid;
     grid-template-columns:3fr 1fr;
-    padding:2em;
 }
 
 svg {
@@ -138,16 +137,19 @@ form input {
     grid-column:1/2;
     display:grid;
     grid-template:1fr 1fr 1fr/1fr 1fr;
+    gap:1em;
+    padding:2em;
 }
 
 .single-card {
     background-color: var(--white);
-    width:30rem;
+    width:25rem;
     height:auto;
-    padding:2rem;
+    padding:1rem;
     display:grid;
-    grid-template:repeat(2,1fr)/repeat(2,1fr);
-    row-gap:1rem;
+    grid-template:1fr min-content/repeat(2,1fr);
+    row-gap:.5rem;
+    border-left: 10px solid var(--yellow);
 }
 .card-text {
     grid-column: 1/3;
@@ -155,4 +157,5 @@ form input {
 .icons {
     grid-column:2/3;
     grid-row: 2/3;
+    justify-self: end;
 }
